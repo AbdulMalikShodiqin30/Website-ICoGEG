@@ -519,3 +519,8 @@ video {
 .font-poppins {
   font-family: Poppins, sans-serif;
 }
+
+.text-navy-blue {
+  --tw-text-opacity: 1;
+  color: hsl(218 39% 35% / var(--tw-text-opacity));
+}
