@@ -516,57 +516,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.bg-sky-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(3 105 161 / var(--tw-bg-opacity));
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
-.text-red-50 {
-  --tw-text-opacity: 1;
-  color: rgb(254 242 242 / var(--tw-text-opacity));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.underline {
-  text-decoration-line: underline;
-}
-
-.hover\:bg-sky-800:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(7 89 133 / var(--tw-bg-opacity));
-}
-
-@media (min-width: 640px) {
-  .sm\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .sm\:py-3 {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
+.font-poppins {
+  font-family: Poppins, sans-serif;
 }
