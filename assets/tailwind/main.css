@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .section-title {
-  @apply font-poppins uppercase text-navy-blue font-bold text-2xl
+  @apply font-poppins uppercase font-bold text-2xl
 }
