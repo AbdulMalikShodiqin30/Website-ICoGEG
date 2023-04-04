@@ -22,6 +22,7 @@ module.exports = {
       backgroundImage: {
         "hero-header": "url('../img/bg/header.png')",
         "hero-topics": "url('../img/bg/topics.png')",
+        "hero-committees": "url('../img/bg/committe.png')",
       },
     },
   },
