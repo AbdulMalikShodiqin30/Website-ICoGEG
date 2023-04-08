@@ -707,6 +707,14 @@ video {
   width: 100%;
 }
 
+.w-\[90vw\] {
+  width: 90vw;
+}
+
+.w-\[92vw\] {
+  width: 92vw;
+}
+
 .flex-grow {
   flex-grow: 1;
 }
@@ -974,6 +982,11 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .pl-16 {
