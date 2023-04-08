@@ -25,6 +25,10 @@ module.exports = {
         "hero-topics": "url('../img/bg/topics.png')",
         "hero-committees": "url('../img/bg/committe.png')",
       },
+      gridTemplateColumns: {
+        "max-2": "repeat(2,max-content)",
+        "max-3": "repeat(3,max-content)",
+      },
     },
   },
   plugins: [],
