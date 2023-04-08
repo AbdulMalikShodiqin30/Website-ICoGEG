@@ -3,9 +3,13 @@
 @tailwind utilities;
 
 .section-title {
-  @apply font-poppins uppercase font-bold text-3xl
+  @apply font-poppins text-3xl font-bold uppercase;
 }
 
 .section-subtitle {
-  @apply font-poppins uppercase text-[#AAAAAA] font-normal text-lg
+  @apply font-poppins text-lg font-normal uppercase text-[#AAAAAA];
+}
+
+.section-title-border {
+  @apply relative before:absolute before:-bottom-3 before:left-[50%] before:h-[1px] before:w-20 before:translate-x-[-50%] before:rounded before:bg-[#DDDDDD] before:content-[''] after:absolute after:-bottom-3 after:left-[50%] after:h-[2px] after:w-8 after:translate-x-[-50%] after:rounded after:bg-[#47B2E4] after:content-[''];
 }

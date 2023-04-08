@@ -1174,6 +1174,40 @@ video {
   color: rgb(170 170 170 / var(--tw-text-opacity));
 }
 
+.section-title-border {
+  position: relative;
+}
+
+.section-title-border::before {
+  position: absolute;
+  bottom: -0.75rem;
+  left: 50%;
+  height: 1px;
+  width: 5rem;
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(221 221 221 / var(--tw-bg-opacity));
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+.section-title-border::after {
+  position: absolute;
+  bottom: -0.75rem;
+  left: 50%;
+  height: 2px;
+  width: 2rem;
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 178 228 / var(--tw-bg-opacity));
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
