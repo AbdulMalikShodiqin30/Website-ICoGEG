@@ -658,6 +658,18 @@ video {
   margin-top: 6rem;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.ml-80 {
+  margin-left: 20rem;
+}
+
+.ml-8 {
+  margin-left: 2rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -1166,6 +1178,48 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-\[-35px_-20px_10px_0\] {
+  --tw-shadow: -35px -20px 10px 0;
+  --tw-shadow-colored: -35px -20px 10px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-\[35px_-20px_10px_0\] {
+  --tw-shadow: 35px -20px 10px 0;
+  --tw-shadow-colored: 35px -20px 10px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-\[35px_-20px_10px_10px\] {
+  --tw-shadow: 35px -20px 10px 10px;
+  --tw-shadow-colored: 35px -20px 10px 10px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-\[35px_-20px_10px\] {
+  --tw-shadow: 35px -20px 10px;
+  --tw-shadow-colored: 35px -20px 10px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-\[45px_-20px_10px\] {
+  --tw-shadow: 45px -20px 10px;
+  --tw-shadow-colored: 45px -20px 10px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-\[45px_-25px_10px\] {
+  --tw-shadow: 45px -25px 10px;
+  --tw-shadow-colored: 45px -25px 10px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-\[-45px_-25px_10px\] {
+  --tw-shadow: -45px -25px 10px;
+  --tw-shadow-colored: -45px -25px 10px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-orange-lemon\/30 {
   --tw-shadow-color: hsl(14 97% 60% / 0.3);
   --tw-shadow: var(--tw-shadow-colored);
@@ -1178,6 +1232,11 @@ video {
 
 .shadow-slate-300\/30 {
   --tw-shadow-color: rgb(203 213 225 / 0.3);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-orange-lemon\/60 {
+  --tw-shadow-color: hsl(14 97% 60% / 0.6);
   --tw-shadow: var(--tw-shadow-colored);
 }
 
