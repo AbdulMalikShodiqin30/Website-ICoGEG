@@ -7,7 +7,7 @@
 }
 
 .section-subtitle {
-  @apply font-poppins text-lg font-normal uppercase text-[#AAAAAA];
+  @apply font-poppins text-lg  uppercase tracking-widest text-[#AAAAAA];
 }
 
 .section-title-border {
