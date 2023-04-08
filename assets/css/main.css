@@ -847,6 +847,10 @@ video {
   row-gap: 1.5rem;
 }
 
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
