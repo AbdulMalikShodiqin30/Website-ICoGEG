@@ -1,3 +1,4 @@
+/* ==================== CHANGE NAV HEADER ===================== */
 function scrollNavHeader() {
   const nav = document.getElementById("nav");
 
@@ -11,3 +12,18 @@ function scrollNavHeader() {
 }
 
 window.addEventListener("scroll", scrollNavHeader);
+
+/* ==================== SHOW SCROLL UP ===================== */
+function showScroll() {
+  const scrollUp = document.getElementById("scroll-up");
+
+  if (this.scrollY >= 350) {
+    scrollUp.classList.add("bottom-8");
+    scrollUp.classList.remove("-bottom-20");
+  } else {
+    scrollUp.classList.remove("bottom-8");
+    scrollUp.classList.add("-bottom-20");
+  }
+}
+
+window.addEventListener("scroll", showScroll);
