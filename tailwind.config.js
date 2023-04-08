@@ -18,6 +18,7 @@ module.exports = {
         "youth-blue": "hsl(199, 74%, 59%)",
         "cream-vanilla": "hsl(52, 60%, 95%)",
         "yellow-sunrise": "hsl(56, 98%, 59%)",
+        "red-bata": "hsl(7,78%,60%)",
       },
       backgroundImage: {
         "hero-header": "url('../img/bg/header.png')",
