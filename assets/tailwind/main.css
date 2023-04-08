@@ -1,4 +1,14 @@
 @tailwind base;
+
+::-webkit-scrollbar {
+  width: 15px;
+  @apply rounded bg-slate-300;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded bg-slate-400 hover:bg-slate-500;
+}
+
 @tailwind components;
 @tailwind utilities;
 
