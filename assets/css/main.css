@@ -1012,6 +1012,10 @@ video {
   background-size: cover;
 }
 
+.bg-fixed {
+  background-attachment: fixed;
+}
+
 .bg-clip-padding {
   background-clip: padding-box;
 }
