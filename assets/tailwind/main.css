@@ -13,3 +13,7 @@
 .section-title-border {
   @apply relative before:absolute before:-bottom-3 before:left-[50%] before:h-[1px] before:w-20 before:translate-x-[-50%] before:rounded before:bg-[#DDDDDD] before:content-[''] after:absolute after:-bottom-3 after:left-[50%] after:h-[2px] after:w-8 after:translate-x-[-50%] after:rounded after:bg-[#47B2E4] after:content-[''];
 }
+
+.section-subtitle-border {
+  @apply relative before:absolute before:-right-24 before:top-[50%] before:h-[2px] before:w-20 before:translate-y-[-50%] before:rounded before:bg-[#FFC451] before:content-[''];
+}
