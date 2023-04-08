@@ -27,3 +27,25 @@ function showScroll() {
 }
 
 window.addEventListener("scroll", showScroll);
+
+/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelectorAll("section[id]");
+
+const scrollActive = () => {
+  const scrollY = window.scrollY;
+
+  sections.forEach((section) => {
+    const sectionHeight = section.offsetHeight,
+      sectionTop = section.offsetTop - 58,
+      sectionId = section.getAttribute("id"),
+      sectionClass = document.querySelector(".nav__menu a[href*=" + sectionId);
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      sectionClass.classList.add("bg-orange-lemon", "text-white");
+    } else {
+      sectionClass.classList.remove("bg-orange-lemon", "text-white");
+    }
+  });
+};
+
+window.addEventListener("scroll", scrollActive);
