@@ -13,7 +13,7 @@
 @tailwind utilities;
 
 .section-title {
-  @apply font-poppins text-3xl font-bold uppercase;
+  @apply font-poppins text-4xl font-bold uppercase;
 }
 
 .section-subtitle {
