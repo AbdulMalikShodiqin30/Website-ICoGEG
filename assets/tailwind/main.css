@@ -27,3 +27,11 @@
 .section-subtitle-border {
   @apply relative before:absolute before:-right-24 before:top-[50%] before:h-[2px] before:w-20 before:translate-y-[-50%] before:rounded before:bg-[#FFC451] before:content-[''];
 }
+
+.swiper-pagination-bullet {
+  @apply bg-white opacity-30;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-yellow-sunrise opacity-100;
+}

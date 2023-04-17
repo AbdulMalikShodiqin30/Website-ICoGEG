@@ -586,6 +586,10 @@ video {
   inset: 0px;
 }
 
+.\!-bottom-12 {
+  bottom: -3rem !important;
+}
+
 .-bottom-20 {
   bottom: -5rem;
 }
@@ -596,6 +600,18 @@ video {
 
 .top-0 {
   top: 0px;
+}
+
+.\!-bottom-14 {
+  bottom: -3.5rem !important;
+}
+
+.\!-bottom-20 {
+  bottom: -5rem !important;
+}
+
+.\!-bottom-16 {
+  bottom: -4rem !important;
 }
 
 .z-10 {
@@ -672,10 +688,6 @@ video {
   margin-top: 3rem;
 }
 
-.mt-16 {
-  margin-top: 4rem;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -720,6 +732,10 @@ video {
   height: 180px;
 }
 
+.h-\[250px\] {
+  height: 250px;
+}
+
 .h-\[500px\] {
   height: 500px;
 }
@@ -728,20 +744,12 @@ video {
   height: 55px;
 }
 
-.h-\[300px\] {
-  height: 300px;
-}
-
-.h-\[250px\] {
-  height: 250px;
-}
-
-.h-\[325px\] {
-  height: 325px;
-}
-
 .min-h-\[100vh\] {
   min-height: 100vh;
+}
+
+.w-\[250px\] {
+  width: 250px;
 }
 
 .w-\[40ch\] {
@@ -762,18 +770,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[300px\] {
-  width: 300px;
-}
-
-.w-\[250px\] {
-  width: 250px;
-}
-
-.w-\[325px\] {
-  width: 325px;
 }
 
 .flex-grow {
@@ -886,6 +882,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.\!overflow-visible {
+  overflow: visible !important;
 }
 
 .scroll-smooth {
@@ -1017,11 +1017,6 @@ video {
   background-color: hsl(199 74% 59% / var(--tw-bg-opacity));
 }
 
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-40 {
   --tw-bg-opacity: 0.4;
 }
@@ -1062,17 +1057,12 @@ video {
   padding: 1rem;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
 .p-5 {
   padding: 1.25rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+.p-8 {
+  padding: 2rem;
 }
 
 .px-12 {
@@ -1098,11 +1088,6 @@ video {
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
-}
-
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 .py-2 {
@@ -1493,6 +1478,18 @@ video {
   background-color: rgb(255 196 81 / var(--tw-bg-opacity));
   --tw-content: '';
   content: var(--tw-content);
+}
+
+.swiper-pagination-bullet {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  opacity: 0.3;
+}
+
+.swiper-pagination-bullet-active {
+  --tw-bg-opacity: 1;
+  background-color: hsl(56 98% 59% / var(--tw-bg-opacity));
+  opacity: 1;
 }
 
 .before\:absolute::before {
