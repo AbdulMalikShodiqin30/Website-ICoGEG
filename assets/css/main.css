@@ -614,6 +614,10 @@ video {
   bottom: -4rem !important;
 }
 
+.bottom-8 {
+  bottom: 2rem;
+}
+
 .z-10 {
   z-index: 10;
 }
