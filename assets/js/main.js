@@ -49,3 +49,26 @@ const scrollActive = () => {
 };
 
 window.addEventListener("scroll", scrollActive);
+
+/* ==================== SWIPER TOPICS  ===================== */
+const swiperTopics = new Swiper(".swiper-topics", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  centeredSlides: true,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    568: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+  },
+});
