@@ -139,7 +139,7 @@
           class="container relative z-10 flex min-h-[100vh] items-center justify-between pt-24 xl:px-12"
         >
           <h1
-            class="font-jost text-[2.75rem] font-bold leading-[1.4] text-white"
+            class="home__title font-jost text-[2.75rem] font-bold leading-[1.4] text-white"
           >
             Welcome To <br />
             The 1th International <br />
@@ -150,11 +150,11 @@
             <img
               src="assets/img/hero-header.png"
               alt=""
-              class="drop-shadow-md"
+              class="home__img drop-shadow-md"
               width="550"
             />
             <p
-              class="mr-8 pt-32 text-right font-poppins text-xl font-semibold leading-[1.5] tracking-wide text-white"
+              class="home__p mr-8 pt-32 text-right font-poppins text-xl font-semibold leading-[1.5] tracking-wide text-white"
             >
               DEPARTMENT OF GEOLOGICAL ENGINEERING <br />
               FACULTY OF ENGINEERING HASANUDDIN UNIVERSITY
@@ -166,7 +166,7 @@
       <!--- ==================== ABOUT ===================== -->
       <section class="py-32" id="about">
         <div class="container flex items-center gap-x-6 font-jost xl:px-12">
-          <div>
+          <div class="about">
             <h2 class="section-title text-navy-blue">About Us</h2>
             <p class="mt-4 text-3xl">
               Welcome to ICG2E 2023 <br />
@@ -188,7 +188,7 @@
           <img
             src="assets/img/hero-about.png"
             alt=""
-            class="rounded-lg shadow-2xl"
+            class="about__img rounded-lg shadow-2xl"
             width="530"
           />
         </div>
@@ -376,12 +376,14 @@
       <!--- ==================== FEE ===================== -->
       <section class="py-32" id="fee">
         <div class="container font-jost xl:px-12">
-          <span class="section-subtitle section-subtitle-border"
-            >REGISTRATION & PAYMENT</span
-          >
-          <h2 class="section-title text-navy-blue">Registration & Payment</h2>
+          <div class="fee__title">
+            <span class="section-subtitle section-subtitle-border"
+              >REGISTRATION & PAYMENT</span
+            >
+            <h2 class="section-title text-navy-blue">Registration & Payment</h2>
+          </div>
           <div class="mt-12 grid grid-cols-3 gap-x-10 text-center">
-            <article class="drop-shadow-md">
+            <article class="fee__card drop-shadow-md">
               <div class="rounded-t-lg bg-youth-blue py-4">
                 <p class="text-white">
                   General <br />
@@ -414,7 +416,7 @@
                 >Register Now</a
               >
             </article>
-            <article class="drop-shadow-md">
+            <article class="fee__card drop-shadow-md">
               <div class="rounded-t-lg bg-youth-blue py-4">
                 <p class="text-white">
                   Student <br />
@@ -447,7 +449,7 @@
                 >Register Now</a
               >
             </article>
-            <article class="drop-shadow-md">
+            <article class="fee__card drop-shadow-md">
               <div class="rounded-t-lg bg-youth-blue py-4">
                 <p class="text-white">
                   Charge per extra Paper <br />
@@ -487,21 +489,23 @@
       <!--- ==================== DATE ===================== -->
       <section class="pb-32 pt-24" id="date">
         <div class="xl p-5:px-12 container text-center font-poppins">
-          <span class="section-subtitle">IMPORTANT</span>
-          <h2 class="section-title section-title-border text-navy-blue">
-            Important Date
-          </h2>
+          <div class="date__title">
+            <span class="section-subtitle">IMPORTANT</span>
+            <h2 class="section-title section-title-border text-navy-blue">
+              Important Date
+            </h2>
+          </div>
           <div class="mt-20 flex items-center justify-center gap-x-20">
             <img
               src="assets/img/hero-announcement.png"
               alt=""
-              class="h-[180px]"
+              class="date__img h-[180px]"
             />
             <div
-              class="relative flex flex-col gap-y-6 rounded border-l-[3px] border-red-bata py-8 text-left font-poppins before:absolute before:left-0 before:top-0 before:h-[10px] before:w-[10px] before:-translate-x-[.425rem] before:-translate-y-0.5 before:rounded-full before:bg-[#CD2A2E] before:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[10px] after:w-[10px] after:-translate-x-[.425rem] after:translate-y-0.5 after:rounded-full after:bg-[#CD2A2E] after:content-['']"
+              class="date__line relative flex flex-col gap-y-6 rounded border-l-[3px] border-red-bata py-8 text-left font-poppins before:absolute before:left-0 before:top-0 before:h-[10px] before:w-[10px] before:-translate-x-[.425rem] before:-translate-y-0.5 before:rounded-full before:bg-[#CD2A2E] before:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[10px] after:w-[10px] after:-translate-x-[.425rem] after:translate-y-0.5 after:rounded-full after:bg-[#CD2A2E] after:content-['']"
             >
               <div
-                class="before:top:0 relative mb-4 pl-8 before:absolute before:left-0 before:top-1 before:h-[15px] before:w-[15px] before:-translate-x-[.5rem] before:rounded-full before:bg-yellow-sunrise before:content-['']"
+                class="before:top:0 date__date relative mb-4 pl-8 before:absolute before:left-0 before:top-1 before:h-[15px] before:w-[15px] before:-translate-x-[.5rem] before:rounded-full before:bg-yellow-sunrise before:content-['']"
               >
                 <span class="font-semibold text-yellow-sunrise"
                   >14 July 2023
@@ -509,13 +513,13 @@
                 <p class="font-medium">Abstract Submission Deadline</p>
               </div>
               <div
-                class="before:top:0 relative mb-4 pl-8 before:absolute before:left-0 before:top-1 before:h-[15px] before:w-[15px] before:-translate-x-[.5rem] before:rounded-full before:bg-[#FD9031] before:content-['']"
+                class="before:top:0 date__date relative mb-4 pl-8 before:absolute before:left-0 before:top-1 before:h-[15px] before:w-[15px] before:-translate-x-[.5rem] before:rounded-full before:bg-[#FD9031] before:content-['']"
               >
                 <span class="font-semibold text-[#FD9031]">20 July 2023 </span>
                 <p class="font-medium">Acceptance Notification</p>
               </div>
               <div
-                class="before:top:0 relative mb-4 pl-8 before:absolute before:left-0 before:top-1 before:h-[15px] before:w-[15px] before:-translate-x-[.5rem] before:rounded-full before:bg-[#FD9031] before:content-['']"
+                class="before:top:0 date__date relative mb-4 pl-8 before:absolute before:left-0 before:top-1 before:h-[15px] before:w-[15px] before:-translate-x-[.5rem] before:rounded-full before:bg-[#FD9031] before:content-['']"
               >
                 <span class="font-semibold text-[#FD9031]"
                   >1 - 10 August 2023
@@ -523,7 +527,7 @@
                 <p class="font-medium">Payment</p>
               </div>
               <div
-                class="before:top:0 relative mb-4 pl-8 before:absolute before:left-0 before:top-1 before:h-[15px] before:w-[15px] before:-translate-x-[.5rem] before:rounded-full before:bg-red-bata before:content-['']"
+                class="before:top:0 date__date relative mb-4 pl-8 before:absolute before:left-0 before:top-1 before:h-[15px] before:w-[15px] before:-translate-x-[.5rem] before:rounded-full before:bg-red-bata before:content-['']"
               >
                 <span class="font-semibold text-red-bata"
                   >25 September 2023
@@ -538,19 +542,21 @@
       <!--- ==================== SUBMISSION ===================== -->
       <section class="py-32" id="submission">
         <div class="container xl:px-12">
-          <span class="section-subtitle section-subtitle-border"
-            >Submission</span
-          >
-          <h2 class="section-title text-navy-blue">Submission Template</h2>
+          <div class="submission__title">
+            <span class="section-subtitle section-subtitle-border"
+              >Submission</span
+            >
+            <h2 class="section-title text-navy-blue">Submission Template</h2>
+          </div>
           <div class="mt-12 flex justify-between">
             <img
               src="assets/img/hero-submission.png"
               alt=""
               loading="lazy"
               width="520"
-              class="rounded-lg shadow-2xl"
+              class="submission__img rounded-lg shadow-2xl"
             />
-            <div class="pl-6 font-poppins">
+            <div class="submission__text pl-6 font-poppins">
               <h3 class="font-raleway font-medium">
                 Submission Instructions (Presenter) :
               </h3>
@@ -627,9 +633,9 @@
       <section class="relative mb-24 bg-hero-topics bg-cover bg-fixed py-32">
         <div class="absolute inset-0 bg-black/50"></div>
         <div class="container relative z-10 text-center text-white xl:px-12">
-          <h2 class="section-title mb-10">THEME</h2>
+          <h2 class="section-title theme__title mb-10">THEME</h2>
           <p
-            class="mx-auto w-[40ch] rounded-lg bg-orange-lemon bg-opacity-40 bg-clip-padding p-2 font-jost text-3xl font-bold leading-[1.5] shadow-md shadow-orange-lemon/30 backdrop-blur-xl backdrop-filter"
+            class="theme__desc mx-auto w-[40ch] rounded-lg bg-orange-lemon bg-opacity-40 bg-clip-padding p-2 font-jost text-3xl font-bold leading-[1.5] shadow-md shadow-orange-lemon/30 backdrop-blur-xl backdrop-filter"
           >
             “Elevating Research and Innovation in Geoscience and Geological
             Engineering for Sustainable and Resilient Nation in anticipating
@@ -638,13 +644,13 @@
         </div>
       </section>
 
-      <!--- ==================== COMMITTEES ===================== -->
+      <!--- ==================== SPEECH ===================== -->
       <section class="relative bg-hero-committees bg-cover bg-fixed py-32">
         <div class="absolute inset-0 bg-black/50"></div>
         <div class="container relative z-10 text-center text-white xl:px-12">
-          <h2 class="section-title mb-10">WELCOME SPEECH</h2>
+          <h2 class="section-title speech__title mb-10">WELCOME SPEECH</h2>
           <div class="flex items-center justify-between">
-            <div class="flex-grow text-left font-jost text-xl">
+            <div class="speech__left flex-grow text-left font-jost text-xl">
               <img
                 src="assets/img/speaker/speaker1.png"
                 alt="Prof. Dr. Ir. Jamaluddin Jompa, M.Sc."
@@ -658,7 +664,7 @@
                 </p>
               </div>
             </div>
-            <div class="flex-grow text-right font-jost text-xl">
+            <div class="speech__right flex-grow text-right font-jost text-xl">
               <img
                 src="assets/img/speaker/speaker2.png"
                 alt="Prof. Dr. Eng. Ir. Muhammad Isran Ramli, ST., MT."
@@ -685,9 +691,9 @@
           <img
             src="assets/img/speaker/main-speaker.png"
             alt="Ir. H Mohammad Ramadhan Pomanto "
-            class="h-[500px] rounded-lg shadow-xl"
+            class="keynote__img h-[500px] rounded-lg shadow-xl"
           />
-          <div class="py-6">
+          <div class="keynote__text py-6">
             <span class="section-subtitle section-subtitle-border"
               >KEYNOTE</span
             >
@@ -712,15 +718,17 @@
       <!--- ==================== SPEAKER ===================== -->
       <section class="bg-[#F3F5FA] py-12" id="speakers">
         <div class="container text-center xl:px-12">
-          <span class="section-subtitle">INVITED</span>
-          <h2 class="section-title section-title-border text-navy-blue">
-            Invited speaker
-          </h2>
+          <div class="speaker__title">
+            <span class="section-subtitle">INVITED</span>
+            <h2 class="section-title section-title-border text-navy-blue">
+              Invited speaker
+            </h2>
+          </div>
           <div
             class="mt-12 grid grid-cols-2 place-items-center gap-8 px-12 text-left"
           >
             <article
-              class="flex w-full items-center gap-x-6 rounded-lg bg-white p-4 shadow-lg"
+              class="speaker__card flex w-full items-center gap-x-6 rounded-lg bg-white p-4 shadow-lg"
             >
               <img
                 src="assets/img/speaker/speaker3.png"
@@ -735,7 +743,7 @@
               </div>
             </article>
             <article
-              class="flex w-full items-center gap-x-6 rounded-lg bg-white p-4 shadow-lg"
+              class="speaker__card flex w-full items-center gap-x-6 rounded-lg bg-white p-4 shadow-lg"
             >
               <img
                 src="assets/img/speaker/speaker4.png"
@@ -750,7 +758,7 @@
               </div>
             </article>
             <article
-              class="flex w-full items-center gap-x-6 rounded-lg bg-white p-4 shadow-lg"
+              class="speaker__card flex w-full items-center gap-x-6 rounded-lg bg-white p-4 shadow-lg"
             >
               <img
                 src="assets/img/speaker/speaker5.png"
@@ -765,7 +773,7 @@
               </div>
             </article>
             <article
-              class="flex w-full items-center gap-x-6 rounded-lg bg-white p-4 shadow-lg"
+              class="speaker__card flex w-full items-center gap-x-6 rounded-lg bg-white p-4 shadow-lg"
             >
               <img
                 src="assets/img/speaker/speaker6.png"
@@ -786,13 +794,15 @@
       <!--- ==================== COMMITTEE ===================== -->
       <section class="py-24" id="committee">
         <div class="container font-poppins xl:px-12">
-          <span class="section-subtitle section-subtitle-border"
-            >Committee</span
-          >
-          <h2 class="section-title text-navy-blue">Committee</h2>
+          <div class="committee__title">
+            <span class="section-subtitle section-subtitle-border"
+              >Committee</span
+            >
+            <h2 class="section-title text-navy-blue">Committee</h2>
+          </div>
           <div class="mt-8 grid grid-cols-2 gap-x-8">
             <div>
-              <div class="mb-4">
+              <div class="committee__list mb-4">
                 <h3 class="mb-2 font-raleway text-xl font-medium">
                   International Scientific Committee (ISC)
                 </h3>
@@ -823,7 +833,7 @@
                   </li>
                 </ul>
               </div>
-              <div>
+              <div class="committee__list">
                 <h3 class="mb-2 font-raleway text-xl font-medium">
                   Steering Commitee:
                 </h3>
@@ -929,7 +939,7 @@
                 </ul>
               </div>
             </div>
-            <div>
+            <div class="committee__list">
               <h3 class="mb-2 font-raleway text-xl font-medium">
                 Organizing Commitee:
               </h3>
@@ -1053,15 +1063,17 @@
       <!--- ==================== VENUE ===================== -->
       <section class="py-24">
         <div class="container xl:px-24">
-          <span class="section-subtitle section-subtitle-border">VENUE</span>
-          <h2 class="section-title text-navy-blue">
-            Unhas Hotel and Convention, <br />
-            Universitas Hasanuddin
-          </h2>
+          <div class="venue__title">
+            <span class="section-subtitle section-subtitle-border">VENUE</span>
+            <h2 class="section-title text-navy-blue">
+              Unhas Hotel and Convention, <br />
+              Universitas Hasanuddin
+            </h2>
+          </div>
           <div
             class="mt-2 flex items-center justify-between gap-x-6 font-poppins"
           >
-            <div class="basis-4/6">
+            <div class="veneu__text basis-4/6">
               <p>
                 Located in Makassar and 8 km from Losari Beach, MaxOneHotels at
                 Resort Makassar provides express check-in and check-out, rooms,
@@ -1095,7 +1107,7 @@
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              class="rounded-2xl shadow-lg"
+              class="veneu__map rounded-2xl shadow-lg"
             ></iframe>
           </div>
         </div>
@@ -1104,29 +1116,37 @@
       <!--- ==================== CONTACT ===================== -->
       <section class="py-24" id="contact">
         <div class="container xl:px-24">
-          <span class="section-subtitle section-subtitle-border">CONTACT</span>
-          <h2 class="section-title text-navy-blue">Contact Us</h2>
+          <div class="contact">
+            <span class="section-subtitle section-subtitle-border"
+              >CONTACT</span
+            >
+            <h2 class="section-title text-navy-blue">Contact Us</h2>
+          </div>
           <div class="mt-8 font-poppins">
-            <h3 class="mb-2 text-xl font-medium">Organizers Secretariat</h3>
-            <p>
-              3rd Floor Science Building, Faculty of Mathematics and Natural
-              Sciences Hasanuddin University Jl. Perintis Kemerdekaan Km. 10
-              Tamalanrea Makassar South Sulawesi Indonesia, 90245 Email:
-              icosfmipauh@gmail.com
-            </p>
-            <h3 class="mb-2 mt-6 text-xl font-medium">Contact Person</h3>
-            <ul class="mb-8">
-              <li>
-                <i class="bx bx-check-double pr-2"></i>
-                Abdur Rahman Arif, S.Si., M.Si., Hasanuddin University, Tel: +62
-                82349180208. Email:arrahman.arif@unhas.ac.id
-              </li>
-              <li>
-                <i class="bx bx-check-double pr-2"></i>
-                Dr. Sci. Muhammad Zakir, M.Si., Hasanuddin University, Tel: +62
-                81341945533. Email:muh.zakir@science.unhas.ac.id
-              </li>
-            </ul>
+            <div class="contact">
+              <h3 class="mb-2 text-xl font-medium">Organizers Secretariat</h3>
+              <p>
+                3rd Floor Science Building, Faculty of Mathematics and Natural
+                Sciences Hasanuddin University Jl. Perintis Kemerdekaan Km. 10
+                Tamalanrea Makassar South Sulawesi Indonesia, 90245 Email:
+                icosfmipauh@gmail.com
+              </p>
+            </div>
+            <div class="contact">
+              <h3 class="mb-2 mt-6 text-xl font-medium">Contact Person</h3>
+              <ul class="mb-8">
+                <li>
+                  <i class="bx bx-check-double pr-2"></i>
+                  Abdur Rahman Arif, S.Si., M.Si., Hasanuddin University, Tel:
+                  +62 82349180208. Email:arrahman.arif@unhas.ac.id
+                </li>
+                <li>
+                  <i class="bx bx-check-double pr-2"></i>
+                  Dr. Sci. Muhammad Zakir, M.Si., Hasanuddin University, Tel:
+                  +62 81341945533. Email:muh.zakir@science.unhas.ac.id
+                </li>
+              </ul>
+            </div>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.8239534584113!2d119.48376601476409!3d-5.132037096275607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbefcc8497a410f%3A0x818e7a15d96cb84!2sScience%20Building%20FMIPA%20UNHAS!5e0!3m2!1sid!2sid!4v1681465313289!5m2!1sid!2sid"
               width="1050"
@@ -1135,7 +1155,7 @@
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              class="w-full rounded-2xl shadow-lg"
+              class="contact w-full rounded-2xl shadow-lg"
             ></iframe>
           </div>
         </div>
@@ -1147,7 +1167,7 @@
       <div
         class="container grid grid-cols-max-2 justify-around py-20 text-white xl:px-20"
       >
-        <div>
+        <div class="footer__list">
           <a
             href="#"
             class="inline-flex items-center gap-x-5 font-raleway text-2xl font-bold"
@@ -1161,7 +1181,7 @@
           </p>
         </div>
         <div class="grid grid-cols-max-3 gap-x-14">
-          <div>
+          <div class="footer__list">
             <h3 class="mb-4 text-lg font-semibold">Useful Links</h3>
             <ul class="flex flex-col gap-y-4">
               <li class="flex items-center">
@@ -1186,11 +1206,11 @@
               </li>
             </ul>
           </div>
-          <div>
+          <div class="footer__list">
             <h3 class="mb-4 text-lg font-semibold">Web Visiting</h3>
             <img src="assets/img/web-visitor.png" alt="" />
           </div>
-          <div>
+          <div class="footer__list">
             <h3 class="mb-4 text-lg font-semibold">Our Newsletter</h3>
             <p class="mb-8 text-sm font-light">
               Tamen quem nulla quae legam multos aute <br />
@@ -1212,18 +1232,23 @@
           </div>
         </div>
       </div>
-      <div class="bg-[#B44B2A] py-4 text-center text-xs text-white">
-        <p class="mb-2 text-white/80">
-          © Copyright <span class="font-semibold text-white">ICG2E 2023</span>.
-          All Rights Reserved
-        </p>
-        <p class="font-thin text-white/80">
-          Organized by
-          <span class="font-semibold text-[#FFC451]">
-            DEPARTMENT OF GEOLOGICAL ENGINEERING <br />
-            FACULTY OF ENGINEERING HASANUDDIN UNIVERSITY</span
-          >
-        </p>
+      <div
+        class="overflow-hidden bg-[#B44B2A] py-4 text-center text-xs text-white"
+      >
+        <div class="footer__copy">
+          <p class="mb-2 text-white/80">
+            © Copyright
+            <span class="font-semibold text-white">ICG2E 2023</span>. All Rights
+            Reserved
+          </p>
+          <p class="font-thin text-white/80">
+            Organized by
+            <span class="font-semibold text-[#FFC451]">
+              DEPARTMENT OF GEOLOGICAL ENGINEERING <br />
+              FACULTY OF ENGINEERING HASANUDDIN UNIVERSITY</span
+            >
+          </p>
+        </div>
       </div>
     </footer>
 
@@ -1236,6 +1261,9 @@
     >
       <i class="bx bxs-chevrons-up"></i>
     </a>
+
+    <!--  ========================= SCROLL REVEAL JS ========================== -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
     <!-- ========================= SWIPER JS ==========================  -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

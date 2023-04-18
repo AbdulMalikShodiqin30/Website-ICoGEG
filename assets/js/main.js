@@ -72,3 +72,36 @@ const swiperTopics = new Swiper(".swiper-topics", {
     },
   },
 });
+
+/* ==================== SCROLL REVEAL ANIMATION ===================== */
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 3000,
+  delay: 400,
+  // reset: true,
+});
+
+sr.reveal(
+  ".home__img, .fee__title, .date__title, .date__line, .theme__title, .speech__title, .speaker__title, .committee__title, .venue__title"
+);
+sr.reveal(".submission__img, .theme__desc, .keynote__text, .veneu__text", {
+  delay: 600,
+});
+sr.reveal(".home__p", { delay: 700 });
+sr.reveal(".footer__copy", { delay: 1500, origin: "bottom" });
+sr.reveal(
+  ".fee__card, .date__date, .speaker__card, .committee__list, .contact, .footer__list",
+  {
+    interval: 300,
+  }
+);
+sr.reveal(
+  ".home__title, .about, .date__img, .submission__title, .submission__img, .speech__left, .keynote__img,.keynote__text, .veneu__text",
+  {
+    origin: "left",
+  }
+);
+sr.reveal(".about__img, .submission__text, .speech__right, .veneu__map", {
+  origin: "right",
+});
