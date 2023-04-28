@@ -13,11 +13,11 @@
 @tailwind utilities;
 
 .section-title {
-  @apply font-poppins text-4xl font-bold uppercase;
+  @apply font-poppins text-2xl font-bold uppercase xl:text-4xl;
 }
 
 .section-subtitle {
-  @apply font-poppins text-lg  uppercase tracking-widest text-[#AAAAAA];
+  @apply font-poppins text-sm uppercase  tracking-widest text-[#AAAAAA] xl:text-lg;
 }
 
 .section-title-border {
@@ -25,7 +25,7 @@
 }
 
 .section-subtitle-border {
-  @apply relative before:absolute before:-right-24 before:top-[50%] before:h-[2px] before:w-20 before:translate-y-[-50%] before:rounded before:bg-[#FFC451] before:content-[''];
+  @apply before:-right-24 before:top-[50%] before:h-[2px] before:w-20 before:translate-y-[-50%] before:rounded before:bg-[#FFC451] xl:relative xl:before:absolute xl:before:content-[''];
 }
 
 .swiper-pagination-bullet {

@@ -34,12 +34,11 @@
     <!--- ==================== HEADER ===================== -->
     <header class="fixed top-0 z-50 w-full">
       <nav
-        class="mx-auto mt-4 flex w-[92vw] items-center gap-x-4 rounded-lg bg-slate-300 bg-opacity-60 bg-clip-padding px-4 py-2 shadow-md shadow-slate-300/30 backdrop-blur-xl backdrop-filter transition-all"
+        class="mx-auto mt-4 flex w-[92vw] items-center gap-x-4 rounded-lg bg-slate-300 bg-opacity-60 bg-clip-padding px-4 py-2 shadow-md shadow-slate-300/30 backdrop-blur-xl backdrop-filter transition-all xl:px-4"
         id="nav"
       >
-        <a
-          href="#"
-          class="inline-flex items-center gap-x-2 font-raleway text-xl text-orange-lemon"
+        <div
+          class="inline-flex w-full items-center justify-between gap-x-2 font-raleway text-xl text-orange-lemon xl:w-[initial]"
         >
           <img
             src="assets/img/logo.svg"
@@ -48,10 +47,20 @@
             height="40"
             class="inline-block"
           />
-          ICG2E 2023
-        </a>
-        <div class="flex-grow">
-          <ul class="nav__menu flex justify-between font-poppins">
+          <span> ICG2E 2023 </span>
+          <i
+            class="bx bx-menu-alt-right inline-flex h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-lg border border-orange-lemon text-2xl xl:hidden"
+            aria-label="menu"
+            id="nav-toggle"
+          ></i>
+        </div>
+        <div
+          class="fixed left-0 top-20 w-full origin-top scale-0 px-4 opacity-0 xl:static xl:w-[initial] xl:flex-grow xl:scale-100 xl:px-0 xl:opacity-100"
+          id="nav-menu"
+        >
+          <ul
+            class="nav__menu flex flex-col items-center gap-y-6 rounded-2xl bg-slate-300 bg-opacity-100 bg-clip-padding py-6 font-poppins shadow-md shadow-slate-300/30 backdrop-blur-xl backdrop-filter transition-all xl:flex-row xl:justify-between xl:gap-0 xl:bg-opacity-0 xl:bg-none xl:py-0 xl:shadow-none xl:backdrop-blur-none"
+          >
             <li>
               <a
                 href="#home"
@@ -136,10 +145,10 @@
       >
         <div class="absolute inset-0 bg-black/20"></div>
         <div
-          class="container relative z-10 flex min-h-[100vh] items-center justify-between pt-24 xl:px-12"
+          class="container relative z-10 flex flex-col items-center justify-between gap-y-10 px-4 pt-32 xl:min-h-[100vh] xl:flex-row xl:px-12 xl:pt-24"
         >
           <h1
-            class="home__title font-jost text-[2.75rem] font-bold leading-[1.4] text-white"
+            class="home__title text-center font-jost text-xl font-bold leading-[1.4] text-white xl:text-left xl:text-[2.75rem]"
           >
             Welcome To <br />
             The 1th International <br />
@@ -154,7 +163,7 @@
               width="550"
             />
             <p
-              class="home__p mr-8 pt-32 text-right font-poppins text-xl font-semibold leading-[1.5] tracking-wide text-white"
+              class="home__p pt-14 text-center font-poppins text-[.8rem] font-semibold leading-[1.5] tracking-wide text-white xl:mr-8 xl:pt-32 xl:text-right xl:text-xl"
             >
               DEPARTMENT OF GEOLOGICAL ENGINEERING <br />
               FACULTY OF ENGINEERING HASANUDDIN UNIVERSITY
@@ -164,15 +173,17 @@
       </section>
 
       <!--- ==================== ABOUT ===================== -->
-      <section class="py-32" id="about">
-        <div class="container flex items-center gap-x-6 font-jost xl:px-12">
+      <section class="py-24 xl:py-32" id="about">
+        <div
+          class="container flex flex-col items-center gap-x-6 gap-y-10 px-4 text-center font-jost xl:flex-row xl:px-12 xl:text-left"
+        >
           <div class="about">
             <h2 class="section-title text-navy-blue">About Us</h2>
-            <p class="mt-4 text-3xl">
+            <p class="mt-4 text-xl xl:text-3xl">
               Welcome to ICG2E 2023 <br />
               INTERNATIONAL CONFERENCE
             </p>
-            <p class="mt-6 leading-[1.85]">
+            <p class="mt-6 text-sm leading-[1.85] xl:text-base">
               The 1th International Conference on Geoscience and Engineering
               Geology (ICG2E) is the first international seminar held by the
               Department of Geological Engineering, Faculty of Engineering,
@@ -196,7 +207,7 @@
       </section>
 
       <!--- ==================== TOPICS ===================== -->
-      <section class="bg-orange-lemon py-24" id="topics">
+      <section class="bg-orange-lemon py-20 xl:py-24" id="topics">
         <div class="container text-center xl:px-12">
           <span class="section-subtitle !text-white">TOPICS</span>
           <h2
@@ -205,7 +216,9 @@
             TOPICS SEMINAR
           </h2>
 
-          <div class="swiper-topics swiper mt-20 !overflow-visible">
+          <div
+            class="swiper-topics swiper mt-20 !overflow-visible px-10 xl:px-0"
+          >
             <div class="swiper-wrapper">
               <article
                 class="swiper-slide flex h-[250px] w-[250px] flex-col items-center justify-center rounded-md bg-white p-5 font-poppins shadow-xl"
@@ -375,15 +388,15 @@
       </section>
 
       <!--- ==================== FEE ===================== -->
-      <section class="py-32" id="fee">
-        <div class="container font-jost xl:px-12">
-          <div class="fee__title">
+      <section class="py-24 xl:py-32" id="fee">
+        <div class="container px-4 font-jost xl:px-12">
+          <div class="fee__title text-center xl:text-left">
             <span class="section-subtitle section-subtitle-border"
               >REGISTRATION & PAYMENT</span
             >
             <h2 class="section-title text-navy-blue">Registration & Payment</h2>
           </div>
-          <div class="mt-12 grid grid-cols-3 gap-x-10 text-center">
+          <div class="mt-12 grid gap-10 text-center xl:grid-cols-3">
             <article class="fee__card drop-shadow-md">
               <div class="rounded-t-lg bg-youth-blue py-4">
                 <p class="text-white">
@@ -488,7 +501,7 @@
       </section>
 
       <!--- ==================== DATE ===================== -->
-      <section class="pb-32 pt-24" id="date">
+      <section class="pb-24 pt-24 xl:pb-32" id="date">
         <div class="xl p-5:px-12 container text-center font-poppins">
           <div class="date__title">
             <span class="section-subtitle">IMPORTANT</span>
@@ -500,7 +513,7 @@
             <img
               src="assets/img/hero-announcement.png"
               alt=""
-              class="date__img h-[180px]"
+              class="date__img hidden h-[180px] xl:inline-block"
               loading="lazy"
             />
             <div
@@ -542,9 +555,9 @@
       </section>
 
       <!--- ==================== SUBMISSION ===================== -->
-      <section class="py-32" id="submission">
+      <section class="py-12 xl:py-32" id="submission">
         <div class="container xl:px-12">
-          <div class="submission__title">
+          <div class="submission__title text-center xl:text-left">
             <span class="section-subtitle section-subtitle-border"
               >Submission</span
             >
@@ -556,10 +569,12 @@
               alt=""
               loading="lazy"
               width="520"
-              class="submission__img rounded-lg shadow-2xl"
+              class="submission__img hidden rounded-lg shadow-2xl xl:inline-block"
               loading="lazy"
             />
-            <div class="submission__text pl-6 font-poppins">
+            <div
+              class="submission__text px-6 font-poppins text-sm xl:pl-6 xl:pr-0 xl:text-base"
+            >
               <h3 class="font-raleway font-medium">
                 Submission Instructions (Presenter) :
               </h3>
@@ -638,7 +653,7 @@
         <div class="container relative z-10 text-center text-white xl:px-12">
           <h2 class="section-title theme__title mb-10">THEME</h2>
           <p
-            class="theme__desc mx-auto w-[40ch] rounded-lg bg-orange-lemon bg-opacity-40 bg-clip-padding p-2 font-jost text-3xl font-bold leading-[1.5] shadow-md shadow-orange-lemon/30 backdrop-blur-xl backdrop-filter"
+            class="theme__desc mx-4 rounded-lg bg-orange-lemon bg-opacity-40 bg-clip-padding p-2 font-jost text-sm font-bold leading-[2] shadow-md shadow-orange-lemon/30 backdrop-blur-xl backdrop-filter xl:mx-auto xl:w-[40ch] xl:text-3xl xl:leading-[1.5]"
           >
             “Elevating Research and Innovation in Geoscience and Geological
             Engineering for Sustainable and Resilient Nation in anticipating
@@ -648,19 +663,27 @@
       </section>
 
       <!--- ==================== SPEECH ===================== -->
-      <section class="relative bg-hero-committees bg-cover bg-fixed py-32">
+      <section
+        class="relative bg-hero-committees bg-cover bg-fixed py-24 xl:py-32"
+      >
         <div class="absolute inset-0 bg-black/50"></div>
-        <div class="container relative z-10 text-center text-white xl:px-12">
+        <div
+          class="container relative z-10 px-8 text-center text-white xl:px-12"
+        >
           <h2 class="section-title speech__title mb-10">WELCOME SPEECH</h2>
-          <div class="flex items-center justify-between">
-            <div class="speech__left flex-grow text-left font-jost text-xl">
+          <div
+            class="flex flex-col items-center justify-between gap-y-16 xl:flex-row"
+          >
+            <div
+              class="speech__left flex-grow font-jost text-sm xl:text-left xl:text-xl"
+            >
               <img
                 src="assets/img/speaker/speaker1.png"
                 alt="Prof. Dr. Ir. Jamaluddin Jompa, M.Sc."
-                class="ml-8 shadow-[-45px_-25px_10px] shadow-orange-lemon/60"
+                class="xl:ml-8 xl:shadow-[-45px_-25px_10px] xl:shadow-orange-lemon/60"
                 loading="lazy"
               />
-              <div class="pl-7">
+              <div class="xl:pl-7">
                 <h3 class="mt-6">Prof. Dr. Ir. Jamaluddin Jompa, M.Sc.</h3>
                 <p>
                   Rector Hasanuddin University <br />
@@ -668,16 +691,18 @@
                 </p>
               </div>
             </div>
-            <div class="speech__right flex-grow text-right font-jost text-xl">
+            <div
+              class="speech__right flex-grow font-jost text-sm xl:text-right xl:text-xl"
+            >
               <img
                 src="assets/img/speaker/speaker2.png"
                 alt="Prof. Dr. Eng. Ir. Muhammad Isran Ramli, ST., MT."
-                class="mr-8 inline-block shadow-[45px_-25px_10px] shadow-orange-lemon/60"
+                class="inline-block xl:mr-8 xl:shadow-[45px_-25px_10px] xl:shadow-orange-lemon/60"
                 loading="lazy"
               />
-              <div class="pr-7">
+              <div class="xl:pr-7">
                 <h3 class="mt-6">
-                  Prof. Dr. Eng. Ir. Muhammad Isran Ramli, ST., MT.
+                  Prof.Dr.Eng.Ir.Muhammad Isran Ramli,ST.,MT.
                 </h3>
                 <p>
                   Decan Faculty Of Engineering <br />
@@ -691,22 +716,26 @@
       </section>
 
       <!--- ==================== KEYNOTE ===================== -->
-      <section class="py-24">
-        <div class="container flex items-center gap-x-12 font-jost xl:px-12">
+      <section class="py-12 xl:py-32">
+        <div
+          class="container flex flex-col-reverse items-center gap-x-12 px-6 font-jost xl:flex-row xl:px-12"
+        >
           <img
             src="assets/img/speaker/main-speaker.png"
             alt="Ir. H Mohammad Ramadhan Pomanto "
-            class="keynote__img h-[500px] rounded-lg shadow-xl"
+            class="keynote__img hidden h-[500px] rounded-lg shadow-xl xl:inline-block"
             loading="lazy"
           />
           <div class="keynote__text py-6">
             <span class="section-subtitle section-subtitle-border"
               >KEYNOTE</span
             >
-            <h2 class="section-title !text-4xl text-navy-blue">
+            <h2 class="section-title text-navy-blue xl:!text-4xl">
               KEYNOTE SPEAKER
             </h2>
-            <p class="mb-12 mt-8 w-[60ch]">
+            <p
+              class="mb-8 mt-6 text-sm xl:mb-12 xl:mt-8 xl:w-[60ch] xl:text-base"
+            >
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Distinctio quia possimus minus! Corporis iure deleniti, cum ullam
               dignissimos vitae in, animi vero aliquam iste sint. Quas beatae
@@ -715,6 +744,12 @@
               quas perspiciatis dicta beatae blanditiis vero, libero sit
               repellat ducimus molestiae repellendus? Sequi, modi magnam.
             </p>
+            <img
+              src="assets/img/speaker/main-speaker.png"
+              alt="Ir. H Mohammad Ramadhan Pomanto "
+              class="keynote__img mb-6 inline-block w-full rounded-lg shadow-xl xl:hidden"
+              loading="lazy"
+            />
             <h3 class="font-bold">Ir. H Mohammad Ramadhan Pomanto</h3>
             <p>Major of Makassar City, Indonesia</p>
           </div>
@@ -731,10 +766,10 @@
             </h2>
           </div>
           <div
-            class="mt-12 grid grid-cols-2 place-items-center gap-8 px-12 text-left"
+            class="mt-12 grid place-items-center gap-8 px-6 text-left xl:grid-cols-2 xl:px-12"
           >
             <article
-              class="speaker__card flex w-full items-center gap-x-6 rounded-lg bg-white p-4 shadow-lg"
+              class="speaker__card flex w-full flex-col items-center gap-x-6 gap-y-4 rounded-lg bg-white p-4 text-center text-sm shadow-lg xl:flex-row xl:text-left"
             >
               <img
                 src="assets/img/speaker/speaker3.png"
@@ -743,14 +778,14 @@
                 loading="lazy"
               />
               <div>
-                <h3 class="text-xl font-semibold text-navy-blue">
+                <h3 class="font-semibold text-navy-blue xl:text-xl">
                   Prof. Dr. Ing. Ir. Misri Gozan, M.Tech
                 </h3>
                 <p>Universitas Indonesia, Indonesia</p>
               </div>
             </article>
             <article
-              class="speaker__card flex w-full items-center gap-x-6 rounded-lg bg-white p-4 shadow-lg"
+              class="speaker__card flex w-full flex-col items-center gap-x-6 gap-y-4 rounded-lg bg-white p-4 text-center text-sm shadow-lg xl:flex-row xl:text-left"
             >
               <img
                 src="assets/img/speaker/speaker4.png"
@@ -759,14 +794,14 @@
                 loading="lazy"
               />
               <div>
-                <h3 class="text-xl font-semibold text-navy-blue">
+                <h3 class="font-semibold text-navy-blue xl:text-xl">
                   Prof. Ts. Dr. Effendi Bin Mohamad
                 </h3>
                 <p>Universiti Teknikal Malaysia Melaka</p>
               </div>
             </article>
             <article
-              class="speaker__card flex w-full items-center gap-x-6 rounded-lg bg-white p-4 shadow-lg"
+              class="speaker__card flex w-full flex-col items-center gap-x-6 gap-y-4 rounded-lg bg-white p-4 text-center text-sm shadow-lg xl:flex-row xl:text-left"
             >
               <img
                 src="assets/img/speaker/speaker5.png"
@@ -775,14 +810,14 @@
                 loading="lazy"
               />
               <div>
-                <h3 class="text-xl font-semibold text-navy-blue">
+                <h3 class="font-semibold text-navy-blue xl:text-xl">
                   Asst. Prof. Romel Hidayat, Ph.D
                 </h3>
                 <p>Sejong University, South Korea</p>
               </div>
             </article>
             <article
-              class="speaker__card flex w-full items-center gap-x-6 rounded-lg bg-white p-4 shadow-lg"
+              class="speaker__card flex w-full flex-col items-center gap-x-6 gap-y-4 rounded-lg bg-white p-4 text-center text-sm shadow-lg xl:flex-row xl:text-left"
             >
               <img
                 src="assets/img/speaker/speaker6.png"
@@ -791,7 +826,7 @@
                 loading="lazy"
               />
               <div>
-                <h3 class="text-xl font-semibold text-navy-blue">
+                <h3 class="font-semibold text-navy-blue xl:text-xl">
                   Prof. Ta-Chih Hsiao*
                 </h3>
                 <p>National Taiwan University</p>
@@ -802,21 +837,21 @@
       </section>
 
       <!--- ==================== COMMITTEE ===================== -->
-      <section class="py-24" id="committee">
-        <div class="container font-poppins xl:px-12">
+      <section class="py-12 xl:py-24" id="committee">
+        <div class="container px-6 font-poppins xl:px-12">
           <div class="committee__title">
             <span class="section-subtitle section-subtitle-border"
               >Committee</span
             >
             <h2 class="section-title text-navy-blue">Committee</h2>
           </div>
-          <div class="mt-8 grid grid-cols-2 gap-x-8">
+          <div class="mt-8 grid gap-8 xl:grid-cols-2">
             <div>
               <div class="committee__list mb-4">
-                <h3 class="mb-2 font-raleway text-xl font-medium">
+                <h3 class="mb-2 font-raleway text-lg font-medium xl:text-xl">
                   International Scientific Committee (ISC)
                 </h3>
-                <ul>
+                <ul class="text-sm">
                   <li>
                     <i class="bx bx-check-double pr-2"></i>
                     Prof. Dr. Ir. Muhammad Arsyad, M.T
@@ -844,10 +879,10 @@
                 </ul>
               </div>
               <div class="committee__list">
-                <h3 class="mb-2 font-raleway text-xl font-medium">
+                <h3 class="mb-2 font-raleway text-lg font-medium xl:text-xl">
                   Steering Commitee:
                 </h3>
-                <ul>
+                <ul class="text-sm">
                   <li>
                     <i class="bx bx-check-double pr-2"></i>Prof. Dr. Dadang A.
                     Suriamihardja
@@ -950,10 +985,10 @@
               </div>
             </div>
             <div class="committee__list">
-              <h3 class="mb-2 font-raleway text-xl font-medium">
+              <h3 class="mb-2 font-raleway text-lg font-medium xl:text-xl">
                 Organizing Commitee:
               </h3>
-              <ul>
+              <ul class="text-sm">
                 <li>
                   <i class="bx bx-check-double pr-2"></i>Dr. Zaraswaty Dwiyana,
                   M.Si
@@ -1071,20 +1106,20 @@
       </section>
 
       <!--- ==================== VENUE ===================== -->
-      <section class="py-24">
-        <div class="container xl:px-24">
+      <section class="py-12 xl:py-24">
+        <div class="container px-6 xl:px-12">
           <div class="venue__title">
             <span class="section-subtitle section-subtitle-border">VENUE</span>
-            <h2 class="section-title text-navy-blue">
+            <h2 class="section-title !text-base text-navy-blue xl:text-2xl">
               Unhas Hotel and Convention, <br />
               Universitas Hasanuddin
             </h2>
           </div>
           <div
-            class="mt-2 flex items-center justify-between gap-x-6 font-poppins"
+            class="mt-2 flex flex-col items-center justify-between gap-x-6 font-poppins xl:flex-row"
           >
-            <div class="veneu__text basis-4/6">
-              <p>
+            <div class="veneu__text basis-4/6 text-xs xl:text-base">
+              <p class="leading-[1.6]">
                 Located in Makassar and 8 km from Losari Beach, MaxOneHotels at
                 Resort Makassar provides express check-in and check-out, rooms,
                 bar, free WiFi throughout the area, and a garden. The property
@@ -1098,7 +1133,7 @@
                 Airport, 18 km from MaxOneHotels at Resort Makassar, and a paid
                 airport shuttle service is available.
               </p>
-              <h3 class="mb-2 mt-5 text-lg font-medium">
+              <h3 class="my-2 text-sm font-medium xl:mb-2 xl:mt-5 xl:text-lg">
                 MaxOne Hotel & Resort Makassar
               </h3>
               <p>
@@ -1111,30 +1146,30 @@
             </div>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.7273875998735!2d119.45935141476407!3d-5.147516496264474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee2d7aa188753%3A0x7b9e10394ec53ab7!2sHotel%20MaxOne%20Makassar!5e0!3m2!1sid!2sid!4v1681464238097!5m2!1sid!2sid"
-              width="600"
-              height="450"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              class="veneu__map rounded-2xl shadow-lg"
+              class="veneu__map mt-8 rounded-2xl shadow-lg xl:mt-0 xl:h-[450px] xl:w-[600px]"
             ></iframe>
           </div>
         </div>
       </section>
 
       <!--- ==================== CONTACT ===================== -->
-      <section class="py-24" id="contact">
-        <div class="container xl:px-24">
+      <section class="py-12 xl:py-24" id="contact">
+        <div class="container px-6 xl:px-24">
           <div class="contact">
             <span class="section-subtitle section-subtitle-border"
               >CONTACT</span
             >
             <h2 class="section-title text-navy-blue">Contact Us</h2>
           </div>
-          <div class="mt-8 font-poppins">
+          <div class="mt-6 font-poppins text-[.8rem] xl:mt-8">
             <div class="contact">
-              <h3 class="mb-2 text-xl font-medium">Organizers Secretariat</h3>
+              <h3 class="mb-2 text-base font-medium leading-[1.65] xl:text-xl">
+                Organizers Secretariat
+              </h3>
               <p>
                 3rd Floor Science Building, Faculty of Mathematics and Natural
                 Sciences Hasanuddin University Jl. Perintis Kemerdekaan Km. 10
@@ -1143,15 +1178,17 @@
               </p>
             </div>
             <div class="contact">
-              <h3 class="mb-2 mt-6 text-xl font-medium">Contact Person</h3>
+              <h3 class="mb-2 mt-4 text-base font-medium xl:mt-6 xl:text-xl">
+                Contact Person
+              </h3>
               <ul class="mb-8">
                 <li>
-                  <i class="bx bx-check-double pr-2"></i>
+                  <i class="bx bx-check-double pr-1 xl:pr-2"></i>
                   Abdur Rahman Arif, S.Si., M.Si., Hasanuddin University, Tel:
                   +62 82349180208. Email:arrahman.arif@unhas.ac.id
                 </li>
                 <li>
-                  <i class="bx bx-check-double pr-2"></i>
+                  <i class="bx bx-check-double pr-1 xl:pr-2"></i>
                   Dr. Sci. Muhammad Zakir, M.Si., Hasanuddin University, Tel:
                   +62 81341945533. Email:muh.zakir@science.unhas.ac.id
                 </li>
@@ -1159,13 +1196,11 @@
             </div>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.8239534584113!2d119.48376601476409!3d-5.132037096275607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbefcc8497a410f%3A0x818e7a15d96cb84!2sScience%20Building%20FMIPA%20UNHAS!5e0!3m2!1sid!2sid!4v1681465313289!5m2!1sid!2sid"
-              width="1050"
-              height="400"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              class="contact w-full rounded-2xl shadow-lg"
+              class="contact h-[400px] w-full rounded-2xl shadow-lg"
             ></iframe>
           </div>
         </div>
@@ -1175,66 +1210,76 @@
     <!--- ==================== FOOTER ===================== -->
     <footer class="w-full bg-[#FF913A] font-poppins">
       <div
-        class="container grid grid-cols-max-2 justify-around py-20 text-white xl:px-20"
+        class="container grid justify-around gap-y-8 px-6 py-10 text-white xl:grid-cols-max-2 xl:px-20 xl:py-20"
       >
         <div class="footer__list">
           <a
             href="#"
-            class="inline-flex items-center gap-x-5 font-raleway text-2xl font-bold"
+            class="inline-flex items-center gap-x-5 font-raleway text-lg font-bold xl:text-2xl"
           >
             <img src="assets/img/logo.svg" alt="" width="60" />
             ICG2E 2023
           </a>
-          <p class="mt-6 text-sm">
+          <p class="mt-6 text-xs xl:text-sm">
             Jl. Perintis Kemerdekaan Km. 10 Tamalanrea, <br />
             Makassar, South Sulawesi Indonesia, 90245
           </p>
         </div>
-        <div class="grid grid-cols-max-3 gap-x-14">
+        <div class="grid gap-x-14 gap-y-8 xl:grid-cols-max-3">
           <div class="footer__list">
-            <h3 class="mb-4 text-lg font-semibold">Useful Links</h3>
+            <h3 class="mb-4 text-sm font-semibold xl:text-lg">Useful Links</h3>
             <ul class="flex flex-col gap-y-4">
               <li class="flex items-center">
                 <i class="bx bx-chevron-right mr-1.5 text-white/80"></i>
-                <a href="#" class="text-sm hover:underline">Home</a>
+                <a href="#" class="text-xs hover:underline xl:text-sm">Home</a>
               </li>
               <li class="flex items-center">
                 <i class="bx bx-chevron-right mr-1.5 text-white/80"></i>
-                <a href="#" class="text-sm hover:underline">About us</a>
+                <a href="#" class="text-xs hover:underline xl:text-sm"
+                  >About us</a
+                >
               </li>
               <li class="flex items-center">
                 <i class="bx bx-chevron-right mr-1.5 text-white/80"></i>
-                <a href="#" class="text-sm hover:underline">Important Dates</a>
+                <a href="#" class="text-xs hover:underline xl:text-sm"
+                  >Important Dates</a
+                >
               </li>
               <li class="flex items-center">
                 <i class="bx bx-chevron-right mr-1.5 text-white/80"></i>
-                <a href="#" class="text-sm hover:underline">Speakers</a>
+                <a href="#" class="text-xs hover:underline xl:text-sm"
+                  >Speakers</a
+                >
               </li>
               <li class="flex items-center">
                 <i class="bx bx-chevron-right mr-1.5 text-white/80"></i>
-                <a href="#" class="text-sm hover:underline">Contact</a>
+                <a href="#" class="text-xs hover:underline xl:text-sm"
+                  >Contact</a
+                >
               </li>
             </ul>
           </div>
           <div class="footer__list">
-            <h3 class="mb-4 text-lg font-semibold">Web Visiting</h3>
+            <h3 class="mb-4 text-sm font-semibold xl:text-lg">Web Visiting</h3>
             <img src="assets/img/web-visitor.png" alt="" />
           </div>
           <div class="footer__list">
-            <h3 class="mb-4 text-lg font-semibold">Our Newsletter</h3>
-            <p class="mb-8 text-sm font-light">
+            <h3 class="mb-4 text-sm font-semibold xl:text-lg">
+              Our Newsletter
+            </h3>
+            <p class="mb-8 text-xs font-light xl:text-sm">
               Tamen quem nulla quae legam multos aute <br />
               sint culpa legam noster magna
             </p>
-            <form>
+            <form class="text-sm xl:text-base">
               <input
                 type="text"
-                class="rounded-l-md px-4 py-2 font-poppins text-black shadow-md outline-none"
+                class="w-full rounded-t-md px-4 py-3 text-center font-poppins text-black shadow-md outline-none xl:w-[initial] xl:rounded-l-md xl:py-2 xl:text-left"
                 placeholder="Your Email"
               />
               <button
                 type="submit"
-                class="-ml-1 rounded-r-md bg-[#FFC451] px-4 py-2 shadow-md"
+                class="w-full rounded-b-md bg-[#FFC451] px-4 py-3 shadow-md xl:-ml-1 xl:w-[initial] xl:rounded-r-md xl:py-2"
               >
                 Subscribe
               </button>
@@ -1243,7 +1288,7 @@
         </div>
       </div>
       <div
-        class="overflow-hidden bg-[#B44B2A] py-4 text-center text-xs text-white"
+        class="overflow-hidden bg-[#B44B2A] py-4 text-center text-[.615rem] text-white xl:text-xs"
       >
         <div class="footer__copy">
           <p class="mb-2 text-white/80">

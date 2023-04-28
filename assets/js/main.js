@@ -3,11 +3,11 @@ function scrollNavHeader() {
   const nav = document.getElementById("nav");
 
   if (this.scrollY >= 50) {
-    nav.classList.add("w-full", "mt-0", "rounded-none", "px-12");
-    nav.classList.remove("w-[92vw]", "mt-4", "rounded-lg", "px-4");
+    nav.classList.add("w-full", "mt-0", "rounded-none", "xl:px-12");
+    nav.classList.remove("w-[92vw]", "mt-4", "rounded-lg", "xl:px-4");
   } else {
-    nav.classList.add("w-[92vw]", "mt-4", "rounded-lg", "px-4");
-    nav.classList.remove("w-full", "mt-0", "rounded-none", "px-12");
+    nav.classList.add("w-[92vw]", "mt-4", "rounded-lg", "xl:px-4");
+    nav.classList.remove("w-full", "mt-0", "rounded-none", "xl:px-12");
   }
 }
 
@@ -36,7 +36,7 @@ const scrollActive = () => {
 
   sections.forEach((section) => {
     const sectionHeight = section.offsetHeight,
-      sectionTop = section.offsetTop - 58,
+      sectionTop = section.offsetTop - 38,
       sectionId = section.getAttribute("id"),
       sectionClass = document.querySelector(".nav__menu a[href*=" + sectionId);
 
@@ -105,3 +105,13 @@ sr.reveal(
 sr.reveal(".about__img, .submission__text, .speech__right, .veneu__map", {
   origin: "right",
 });
+
+/* ==================== HAMBURGER MENU ===================== */
+const navToggle = document.getElementById("nav-toggle"),
+  navMenu = document.getElementById("nav-menu");
+
+if (navToggle && navMenu) {
+  navToggle.addEventListener("click", () => {
+    ["scale-0", "opacity-0"].map((e) => navMenu.classList.toggle(e));
+  });
+}
