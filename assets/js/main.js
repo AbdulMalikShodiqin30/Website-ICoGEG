@@ -108,10 +108,17 @@ sr.reveal(".about__img, .submission__text, .speech__right, .veneu__map", {
 
 /* ==================== HAMBURGER MENU ===================== */
 const navToggle = document.getElementById("nav-toggle"),
-  navMenu = document.getElementById("nav-menu");
+  navMenu = document.getElementById("nav-menu"),
+  navLinks = document.querySelectorAll(".nav__menu a");
 
 if (navToggle && navMenu) {
   navToggle.addEventListener("click", () => {
     ["scale-0", "opacity-0"].map((e) => navMenu.classList.toggle(e));
   });
+
+  navLinks.forEach((nL) =>
+    nL.addEventListener("click", () => {
+      ["scale-0", "opacity-0"].map((e) => navMenu.classList.toggle(e));
+    })
+  );
 }
