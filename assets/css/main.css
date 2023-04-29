@@ -2116,6 +2116,10 @@ video {
     line-height: 1.5;
   }
 
+  .xl\:leading-\[1\.6\] {
+    line-height: 1.6;
+  }
+
   .xl\:opacity-100 {
     opacity: 1;
   }
