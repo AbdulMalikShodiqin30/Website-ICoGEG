@@ -82,7 +82,8 @@
     "yaml": "^1.10.2"
   },
   "scripts": {
-    "watch": "npx tailwindcss -i ./assets/tailwind/main.css -o ./assets/css/main.css --watch"
+    "watch": "npx tailwindcss -i ./assets/tailwind/main.css -o ./assets/css/main.css --watch",
+    "start": "npx live-server ."
   },
   "keywords": [],
   "author": "",
