@@ -709,6 +709,18 @@ video {
   margin-top: 2rem;
 }
 
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -757,6 +769,14 @@ video {
   height: 55px;
 }
 
+.h-\[400px\] {
+  height: 400px;
+}
+
+.h-\[350px\] {
+  height: 350px;
+}
+
 .min-h-\[100vh\] {
   min-height: 100vh;
 }
@@ -791,6 +811,14 @@ video {
 
 .basis-4\/6 {
   flex-basis: 66.666667%;
+}
+
+.basis-4 {
+  flex-basis: 1rem;
+}
+
+.basis-4\/5 {
+  flex-basis: 80%;
 }
 
 .origin-top {
@@ -900,6 +928,10 @@ video {
 
 .gap-y-8 {
   row-gap: 2rem;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .overflow-hidden {
@@ -1323,6 +1355,11 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.text-blue-700 {
+  --tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity));
+}
+
 .text-navy-blue {
   --tw-text-opacity: 1;
   color: hsl(218 39% 35% / var(--tw-text-opacity));
@@ -1350,11 +1387,6 @@ video {
 .text-yellow-sunrise {
   --tw-text-opacity: 1;
   color: hsl(56 98% 59% / var(--tw-text-opacity));
-}
-
-.text-blue-700 {
-  --tw-text-opacity: 1;
-  color: rgb(29 78 216 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -1741,6 +1773,18 @@ video {
     margin-top: 1.25rem;
   }
 
+  .sm\:mr-0 {
+    margin-right: 0px;
+  }
+
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:grid {
+    display: grid;
+  }
+
   .sm\:h-\[300px\] {
     height: 300px;
   }
@@ -1749,8 +1793,28 @@ video {
     height: 400px;
   }
 
+  .sm\:h-\[325px\] {
+    height: 325px;
+  }
+
   .sm\:w-1\/2 {
     width: 50%;
+  }
+
+  .sm\:w-\[30\%\] {
+    width: 30%;
+  }
+
+  .sm\:w-\[40\%\] {
+    width: 40%;
+  }
+
+  .sm\:w-10 {
+    width: 2.5rem;
+  }
+
+  .sm\:basis-5 {
+    flex-basis: 1.25rem;
   }
 
   .sm\:grid-cols-2 {
@@ -1763,6 +1827,30 @@ video {
 
   .sm\:flex-row {
     flex-direction: row;
+  }
+
+  .sm\:flex-col {
+    flex-direction: column;
+  }
+
+  .sm\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .sm\:place-items-end {
+    place-items: end;
+  }
+
+  .sm\:place-items-center {
+    place-items: center;
+  }
+
+  .sm\:content-center {
+    align-content: center;
+  }
+
+  .sm\:items-center {
+    align-items: center;
   }
 
   .sm\:gap-x-6 {
@@ -1998,6 +2086,11 @@ video {
   .xl\:py-32 {
     padding-top: 8rem;
     padding-bottom: 8rem;
+  }
+
+  .xl\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .xl\:pb-0 {
