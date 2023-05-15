@@ -91,7 +91,7 @@ sr.reveal(".submission__img, .theme__desc, .keynote__text, .veneu__text", {
 sr.reveal(".home__p", { delay: 700 });
 sr.reveal(".footer__copy", { delay: 1500, origin: "bottom" });
 sr.reveal(
-  ".fee__card, .date__date, .speaker__card, .committee__list, .contact, .footer__list",
+  ".fee__card, .date__date, .speaker__card, .committee__list, .contact,",
   {
     interval: 300,
   }
