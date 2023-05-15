@@ -689,10 +689,6 @@ video {
   margin-top: 3rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .mt-20 {
   margin-top: 5rem;
 }
@@ -701,24 +697,16 @@ video {
   margin-top: 1rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
 }
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
 }
 
 .inline-block {
@@ -761,20 +749,12 @@ video {
   height: 325px;
 }
 
-.h-\[500px\] {
-  height: 500px;
-}
-
-.h-\[55px\] {
-  height: 55px;
-}
-
 .h-\[400px\] {
   height: 400px;
 }
 
-.h-\[350px\] {
-  height: 350px;
+.h-\[55px\] {
+  height: 55px;
 }
 
 .min-h-\[100vh\] {
@@ -807,14 +787,6 @@ video {
 
 .flex-grow {
   flex-grow: 1;
-}
-
-.basis-4\/6 {
-  flex-basis: 66.666667%;
-}
-
-.basis-4 {
-  flex-basis: 1rem;
 }
 
 .basis-4\/5 {
@@ -928,10 +900,6 @@ video {
 
 .gap-y-8 {
   row-gap: 2rem;
-}
-
-.self-center {
-  align-self: center;
 }
 
 .overflow-hidden {
@@ -1224,6 +1192,10 @@ video {
   padding-top: 8rem;
 }
 
+.pt-16 {
+  padding-top: 4rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1289,10 +1261,6 @@ video {
 
 .font-bold {
   font-weight: 700;
-}
-
-.font-light {
-  font-weight: 300;
 }
 
 .font-medium {
@@ -1773,18 +1741,6 @@ video {
     margin-top: 1.25rem;
   }
 
-  .sm\:mr-0 {
-    margin-right: 0px;
-  }
-
-  .sm\:flex {
-    display: flex;
-  }
-
-  .sm\:grid {
-    display: grid;
-  }
-
   .sm\:h-\[300px\] {
     height: 300px;
   }
@@ -1793,28 +1749,16 @@ video {
     height: 400px;
   }
 
-  .sm\:h-\[325px\] {
-    height: 325px;
+  .sm\:min-h-\[40vh\] {
+    min-height: 40vh;
   }
 
-  .sm\:w-1\/2 {
-    width: 50%;
-  }
-
-  .sm\:w-\[30\%\] {
-    width: 30%;
-  }
-
-  .sm\:w-\[40\%\] {
-    width: 40%;
+  .sm\:min-h-\[30vh\] {
+    min-height: 30vh;
   }
 
   .sm\:w-10 {
     width: 2.5rem;
-  }
-
-  .sm\:basis-5 {
-    flex-basis: 1.25rem;
   }
 
   .sm\:grid-cols-2 {
@@ -1833,26 +1777,6 @@ video {
     flex-direction: column;
   }
 
-  .sm\:flex-wrap {
-    flex-wrap: wrap;
-  }
-
-  .sm\:place-items-end {
-    place-items: end;
-  }
-
-  .sm\:place-items-center {
-    place-items: center;
-  }
-
-  .sm\:content-center {
-    align-content: center;
-  }
-
-  .sm\:items-center {
-    align-items: center;
-  }
-
   .sm\:gap-x-6 {
     -moz-column-gap: 1.5rem;
          column-gap: 1.5rem;
@@ -1868,6 +1792,10 @@ video {
 
   .sm\:pt-10 {
     padding-top: 2.5rem;
+  }
+
+  .sm\:pt-14 {
+    padding-top: 3.5rem;
   }
 
   .sm\:text-left {
@@ -2086,11 +2014,6 @@ video {
   .xl\:py-32 {
     padding-top: 8rem;
     padding-bottom: 8rem;
-  }
-
-  .xl\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
   }
 
   .xl\:pb-0 {
