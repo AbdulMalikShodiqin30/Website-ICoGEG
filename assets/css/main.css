@@ -1192,10 +1192,6 @@ video {
   padding-top: 8rem;
 }
 
-.pt-16 {
-  padding-top: 4rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -1749,16 +1745,8 @@ video {
     height: 400px;
   }
 
-  .sm\:min-h-\[40vh\] {
-    min-height: 40vh;
-  }
-
   .sm\:min-h-\[30vh\] {
     min-height: 30vh;
-  }
-
-  .sm\:w-10 {
-    width: 2.5rem;
   }
 
   .sm\:w-full {
@@ -1792,10 +1780,6 @@ video {
 
   .sm\:pb-8 {
     padding-bottom: 2rem;
-  }
-
-  .sm\:pt-10 {
-    padding-top: 2.5rem;
   }
 
   .sm\:pt-14 {
